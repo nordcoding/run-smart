@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --> 
     <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-    <!-- <link rel="stylesheet" href="/css/slick.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"> -->
+    <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
@@ -114,8 +114,9 @@
                 <div><img src="../img/slide2.png" alt=""></div>
                 <div><img src="../img/slide3.png" alt=""></div>
             </div>
-            <button type="button" class="prev"><img src="img/arrow-left.png"></button>
-            <button type="button" class="next"><img src="img/arrow-right.png"></button> 
+            <!-- Arrow buttons for TinySlider -->
+            <!-- <button type="button" class="prev"><img src="img/arrow-left.png"></button>
+            <button type="button" class="next"><img src="img/arrow-right.png"></button> --> 
         </div>
     </section>
     <section class="catalog">
@@ -126,12 +127,12 @@
                 <li class="catalog__tab"><div>для бега</div></li>
                 <li class="catalog__tab"><div>для триатлона</div></li>
             </ul>
-            <div class="catalog__content">
+            <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/product-img.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__title">TAB 1 Пульсометр Polar FT1</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -140,7 +141,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -165,7 +166,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -190,7 +191,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -215,7 +216,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -240,7 +241,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -265,7 +266,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -283,7 +284,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/product-img.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__title"> TAB 2 Пульсометр Polar FT1</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -292,7 +293,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -317,7 +318,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -342,7 +343,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -367,7 +368,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -392,7 +393,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -417,7 +418,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -435,7 +436,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/product-img.png" alt="" class="catalog-item__img">
-                            <div class="catalog-item__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__title"> TAB 3 Пульсометр Polar FT1</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -444,7 +445,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -469,7 +470,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -494,7 +495,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -519,7 +520,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a> 
+                            <a href="" class="catalog-item__back">Back</a> 
                         </ul>
                     </div>
                     <hr>
@@ -544,7 +545,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -569,7 +570,7 @@
                             <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса</li>
                             <li>Также Вы увидите информацию о расходе калорий за тренировку</li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам</li>
-                            <a href="" class="catalog-item__link-2">Back</a>  
+                            <a href="" class="catalog-item__back">Back</a>  
                         </ul>
                     </div>
                     <hr>
@@ -584,13 +585,50 @@
             </div>
         </div>
     </section>
+    <section class="feed">
+        <div class="container">
+            <div class="title title__feed">отзывы клиентов</div>
+            <div class="feed__item">
+                <img src="/img/review_1.png" alt="" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__title">Ирина Иванченко </div>
+                    <div class="feed__subtitle">2 полумарафона</div>
+                    <div class="feed__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+                    <br><br>
+                    Новые цели - новый гаджет!
+                    <br>
+                    Спасибо, RunSmart! 
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="/img/review_2.png" alt="" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__title">Иван Сёмочкин</div>
+                    <div class="feed__subtitle">1 полумарафон</div>
+                    <div class="feed__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.С ними подготовился к своему первому полумарафону! Спасибо!!!
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="/img/review_3.png" alt="" class="feed__img">
+                <div class="feed__text"> 
+                    <div class="feed__title">Юлия Дашкина</div>
+                    <div class="feed__subtitle">2 полумарафона</div>
+                    <div class="feed__descr">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться. Спасибо!!!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- All scripts  -->
     <!-- Slick slider  -->
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <!-- TinySlider -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
     <!-- Bootstrap slider  -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

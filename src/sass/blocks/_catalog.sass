@@ -25,7 +25,7 @@
         cursor: pointer
         transition: 0.5s all   
         &:hover
-            box-shadow: 3px 3px 5px $main-color
+            box-shadow: 3px 3px 5px $main-color 
             border: none 
             &:nth-child(1) 
                 box-shadow: none 
@@ -38,10 +38,11 @@
             border: none 
     &__content
         margin-top: 60px
-        display: flex
+        display: none
         flex-wrap: wrap
         justify-content: space-between
-        
+        &_active
+            display: flex   
     &-item
         margin-bottom: 19px
         padding: 20px 20px 
@@ -77,8 +78,9 @@
             text-transform: uppercase
             &:hover
                 color: $main-color
-        &__link-2
+        &__back
             position: absolute
+            top: 311px 
             bottom: 0 
             left: 50%
             transform: translateX(calc(-50% - 20px))
@@ -122,6 +124,7 @@
             &_active
                 transform: translateX(0%)
                 margin-right: 20px
+                transition: 0.5s all 
         &__hover 
             width: 50%
             margin-left: 20px
