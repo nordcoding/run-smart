@@ -25,8 +25,9 @@
                     <span>Garmin, Polar, Suunto</span>
                 </div>
                 <div class="header__contacts">
+                    <div class="header__phone-text">Free consultation</div>
                     <a href="+46313631000" class="header__phone">+46 31 363 10 00</a>
-                    <button class="button button_header">Request a call</button>
+                    <button data-modal="consultation" class="button button_header">Request a call</button>
                 </div>
             </div>
             <div class="promo__wrapper">
@@ -40,7 +41,7 @@
                     <div class="promo__icon">
                         <img src="icons/message-icon.png" alt="">We will answer all questions</div>
                 </div>
-                <button class=" button button_promo">request a consultation</button>
+                <button data-modal="consultation" class=" button button_promo">request a consultation</button>
                 <div class="promo__link">
                     or
                     <a href="#">go to catalog</a>
@@ -640,6 +641,37 @@
         </div>
     </div>
 </footer>
+    <div class="overlay">
+        <div class="modal" id="consultation"> 
+            <div class="modal__close">&times;</div>  
+            <div class="modal__title">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="name" type="text">
+                <input name="email" required placeholder="email" type="email">
+                <input name="phone" required placeholder="telephone" type="number">
+                <button class="button button_consultation">request a free call</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order"> 
+            <div class="modal__close">&times;</div>  
+            <div class="modal__title">Your order</div>
+            <div class="modal__descr">Heart rate monitor Polar FT1</div>
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="name" type="text">
+                <input name="email" required placeholder="email" type="email">
+                <input name="phone" required placeholder="telephone" type="number">
+                <button class="button button_success">buy</button>
+            </form>
+        </div>
+
+        <div class="modal modal__success" id="success"> 
+            <div class="modal__close">&times;</div>  
+            <div class="modal__title">Thanks for your application!</div>
+            <div class="modal__descr">Our manager will contact you soon!</div>
+        </div>
+    </div>
 
     <!-- All scripts  -->
     <!-- Slick slider  -->
