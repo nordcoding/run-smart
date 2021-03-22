@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$('.carousel__inner').slick({
 		speed: 1200,
 		slidesToShow: 1,
@@ -133,6 +134,36 @@ $(document).ready(function(){
 
 	$('input[name=phone]').mask("ES (+34)999-999-999");
 
+	$('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #success').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+	//Pageup settings
+	$(window).scroll(function(){
+		if ($(this).scrollTop()>1600){
+			$('.scrollup').fadeIn();
+		} else{
+			$('.scrollup').fadeOut();	
+		}
+	});
+
+	//Smooth scroll settings 
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+	});
 });
 
 /* const slider = tns({
