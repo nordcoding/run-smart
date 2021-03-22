@@ -76,10 +76,10 @@
         <div class="container">
             <h2 class="title title__consultation">Get a free consultation <br> on the selection of a heart rate monitor </h2>
             <div class="consultation__text">Just fill out the application form <br> and we will call you back within 10 minutes</div>
-                <form class="feed-form" action="#">
-                    <input name="name" required placeholder="name" type="text">
-                    <input name="email" required placeholder="email" type="email">
-                    <input name="phone" required placeholder="telephone" type="number">
+                <form id="consultation-form" class="feed-form" action="#">
+                    <input name="name"  placeholder="name" type="text">
+                    <input name="email"  placeholder="email" type="email">
+                    <input name="phone"  placeholder="telephone" >
                     <button class="button button_consultation">request a free call</button>
                 </form>
         </div>
@@ -646,10 +646,10 @@
             <div class="modal__close">&times;</div>  
             <div class="modal__title">Just fill out the application form</div>
             <div class="modal__descr">and we will call you back within 10 minutes</div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="name" type="text">
-                <input name="email" required placeholder="email" type="email">
-                <input name="phone" required placeholder="telephone" type="number">
+            <form id="modal-form" class="feed-form" action="#">
+                <input name="name"  placeholder="name" type="text">
+                <input name="email"  placeholder="email" type="email">
+                <input name="phone"  placeholder="telephone" >
                 <button class="button button_consultation">request a free call</button>
             </form>
         </div>
@@ -658,10 +658,10 @@
             <div class="modal__close">&times;</div>  
             <div class="modal__title">Your order</div>
             <div class="modal__descr">Heart rate monitor Polar FT1</div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="name" type="text">
-                <input name="email" required placeholder="email" type="email">
-                <input name="phone" required placeholder="telephone" type="number">
+            <form id="modal-order" class="feed-form" action="#">
+                <input name="name"  placeholder="name" type="text">
+                <input name="email"  placeholder="email" type="email">
+                <input name="phone"  placeholder="telephone" >
                 <button class="button button_success">buy</button>
             </form>
         </div>
@@ -677,7 +677,9 @@
     <!-- Slick slider  -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     
     <!-- TinySlider -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->

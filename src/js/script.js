@@ -72,8 +72,66 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn();  
 		})
 	})
+	//Validation form plugin 
+	/* $('#modal-form').validate({
+		rules:{
+			name:{
+				required: true,
+				minlength: 2,  
+			},
+			phone:"required",
+			email:{
+				required:true, 
+				email:true 
+			}
+		},
+		messages:{
+			name: {
+				required: "Pls input your name",
+				minlength: jQuery.validator.format("Put min {0} characters!")
+			}, 
+			phone: "Pls input your telephone number",
+			email:{
+				required: "Pls input your email",
+				email:"wrong email name" 
+			} 
+		}
+	});
+	$('#modal-form').validate();
+	$('#modal-order').validate(); */
 
-	
+	function validateForms(form){
+		$(form).validate({
+			rules:{
+				name:{
+					required: true,
+					minlength: 2,  
+				},
+				phone:"required",
+				email:{
+					required:true, 
+					email:true 
+				}
+			},
+			messages:{
+				name: {
+					required: "Pls input your name",
+					minlength: jQuery.validator.format("Put min {0} characters!")
+				}, 
+				phone: "Pls input your telephone number",
+				email:{
+					required: "Pls input your email",
+					email:"wrong email name" 
+				} 
+			}
+		});
+	};
+
+	validateForms('#consultation-form');
+	validateForms('#modal-form');
+	validateForms('#modal-order');
+
+	$('input[name=phone]').mask("ES (+34)999-999-999");
 
 });
 
