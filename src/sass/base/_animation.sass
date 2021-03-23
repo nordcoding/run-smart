@@ -1,6 +1,22 @@
-@keyframes heartbit
-    from
-        transform: scale(1)
-    to
-        transform: scale(1.4)
-    
+.animate
+	&__pulse
+		animation-duration: 1s
+		animation-iteration-count: infinite
+		animation-timing-function: ease
+		&:hover
+			animation-play-state: paused
+	&__bounce
+		animation-duration: 1s
+		animation-iteration-count: infinite
+		animation-timing-function: ease
+		&:hover
+			animation-play-state: paused
+	&__bounceInRight
+		animation-duration: 1s
+	&__bounceInLeft
+		animation-duration: 1s
+
+
+
+
+
