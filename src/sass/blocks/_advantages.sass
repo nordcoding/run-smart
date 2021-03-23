@@ -1,33 +1,40 @@
 .advantages
-    min-height: 473px  
-    padding: 73px 0 83px 0
-    background: #F6F6F6
-    &__wrapper
-        display: flex
-        justify-content: space-between
-    &__item
-        display: flex
-        flex-direction: column
-        width: 238px 
-        align-items: center
-        a
-            color: $main-color 
-            text-decoration: underline
-    &__icon
-        display: flex
-        justify-content: center
-        margin-top: 60px
-    &__title
-        margin-top: 35px
-        font-style: normal
-        font-weight: 700
-        font-size: 18px
-        color: #0D0D0D
-    &__descr
-        margin-top: 20px
-        font-style: normal
-        font-weight: 300
-        font-size: 14px
-        text-align: center
+	min-height: 473px  
+	padding: 73px 0 83px 0
+	background: #F6F6F6
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__item
+		display: flex
+		flex-direction: column
+		width: 238px 
+		align-items: center
+		a
+			color: $main-color 
+			text-decoration: underline
+	&__icon
+		display: flex
+		justify-content: center
+		margin-top: 60px
+		&_animated
+			animation-name: heartbit 
+			animation-duration: 1s
+			animation-iteration-count: infinite
+			animation-timing-function: ease
+			&:hover
+				animation-play-state: paused
+	&__title
+		margin-top: 35px
+		font-style: normal
+		font-weight: 700
+		font-size: 18px
+		color: #0D0D0D
+	&__descr
+		margin-top: 20px
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		text-align: center
 
-    
+	
