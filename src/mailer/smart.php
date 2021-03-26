@@ -13,14 +13,14 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'vlntnkzrv@gmail.com';                 // Наш логин
+$mail->Password = 'Lowj03gegdj9_21!';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-$mail->setFrom('', 'smart-run');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
-//$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->setFrom('vlntnkzrv@gmail.com', 'Pulse');   // От кого письмо 
+$mail->addAddress('valentin@nordcoding.com');     // Add a recipient
+$mail->addAddress('kozyrev.valentin@hotmail.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
@@ -28,7 +28,7 @@ $mail->addAddress('');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'website form request';
+$mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>

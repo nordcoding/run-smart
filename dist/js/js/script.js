@@ -64,10 +64,10 @@ $(document).ready(function(){
 		$('.overlay, #consultation, #success, #order').fadeOut();
 	});
 	//
-	/* $('.button_catalog').on('click',function(){
+	/* $('.button_mini').on('click',function(){
 		$('.overlay, #order').fadeIn();
 	}); */ 
-	$('.button_catalog').each(function(i){
+	$('.button_mini').each(function(i){
 		$(this).on('click', function(){
 			$('#order .modal__descr').text($('.catalog-item__title').eq(i).text());
 			$('.overlay, #order').fadeIn();  
