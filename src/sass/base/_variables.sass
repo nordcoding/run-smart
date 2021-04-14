@@ -1,1 +1,18 @@
-$main-color: #f32e2e 
+$main-color: #c62b2e
+$black-color: #222222
+$gray-color: #686868
+$green-color: #71b45b 
+
+@mixin overlay
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	display: block
+	content: " ";
+	background: #000
+	opacity: .55
+	transition: opacity .3s ease
+	z-index: 1
+	

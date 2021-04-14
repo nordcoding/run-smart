@@ -1,14 +1,22 @@
 .promo 
-	min-height: 650px 
 	padding: 21px 0 93px 0 
-	background: url(../img/screen-1_bg.png) center (center/cover) no-repeat 
-	background-color: #1781c7 
-	background-blend-mode: darken 
+	background: url(../img/promo_bg.png) center (center/cover) no-repeat 
+	height: 90vh
+	max-height: 950px
+	background-position: 50%
+	width: 100%
+	display: block
+	position: relative
+	background-color: #1c1d25
+	&::before
+		@include overlay 
 	&__wrapper 
-        display: flex 
-        flex-direction: column 
-        align-items: flex-end 
-        margin-top: 90px 
+		display: flex 
+		flex-direction: column 
+		align-items: flex-end 
+		margin-top: 90px
+		position: relative
+		z-index: 1 
 	&__icons 
 		margin-top: 65px 
 		width: 425px 
