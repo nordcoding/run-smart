@@ -61,7 +61,7 @@ $(document).ready(function(){
 	});
 	//Close modal window by pressing cross 
 	$('.modal__close').on('click',function(){
-		$('.overlay, #consultation, #success, #order').fadeOut();
+		$('.overlay, #consultation, #thanks, #order').fadeOut();
 	});
 	//
 	/* $('.button_mini').on('click',function(){
@@ -73,33 +73,6 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn();  
 		})
 	})
-	//Validation form plugin 
-	/* $('#modal-form').validate({
-		rules:{
-			name:{
-				required: true,
-				minlength: 2,  
-			},
-			phone:"required",
-			email:{
-				required:true, 
-				email:true 
-			}
-		},
-		messages:{
-			name: {
-				required: "Pls input your name",
-				minlength: jQuery.validator.format("Put min {0} characters!")
-			}, 
-			phone: "Pls input your telephone number",
-			email:{
-				required: "Pls input your email",
-				email:"wrong email name" 
-			} 
-		}
-	});
-	$('#modal-form').validate();
-	$('#modal-order').validate(); */
 
 	function validateForms(form){
 		$(form).validate({
@@ -128,9 +101,8 @@ $(document).ready(function(){
 		});
 	};
 
-	validateForms('#consultation-form');
-	validateForms('#modal-form');
-	validateForms('#modal-order');
+	validateForms('#form');
+	
 
 	$('input[name=phone]').mask("ES (+34)999-999-999");
 
@@ -138,7 +110,7 @@ $(document).ready(function(){
         e.preventDefault();
 
 		if (!$(this).valid()) {
-		return;   
+			return;
 		}
 		
         $.ajax({

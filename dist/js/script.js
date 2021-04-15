@@ -81,12 +81,15 @@ $(document).ready(function(){
 
     validateForms('#consultation-form');
     validateForms('#consultation');
-    validateForms('#order');
+    validateForms('#order-form');
 
-    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    $('input[name=phone]').mask("+34 (999) 999-999");
 
     $('form').submit(function(e) {
         e.preventDefault();
+        if (!$(this).valid()) {
+            return;   
+            }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",

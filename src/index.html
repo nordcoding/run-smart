@@ -72,9 +72,9 @@
             <h2 class="title title__consultation">Get a free consultation <br> on the selection of a heart rate monitor </h2>
             <div class="consultation__text">Just fill out the application form <br> and we will call you back within 10 minutes</div>
             <form id="consultation-form" class="feed-form" action="#">
-                <input name="name" required placeholder="Your name" type="text"> 
-                <input name="phone" required placeholder="Your phone"> 
-                <input name="email" required placeholder="Your e-mail" type="email"> 
+                <input name="name" placeholder="Your name" type="text"> 
+                <input name="phone" placeholder="Your phone"> 
+                <input name="email" placeholder="Your e-mail" type="email"> 
 
                 <button class="button button_submit">Order consultation</button>
             </form>
@@ -618,7 +618,7 @@
         <div class="modal__close">&times;</div>
         <div class="modal__title">Just fill out the application form</div>
         <div class="modal__descr">and we will call you back within 10 minutes</div>
-        <form class="feed-form" action="#">
+        <form id="consultation-form" class="feed-form" action="#">
             <input name="name" placeholder="Your name" type="text"> 
             <input name="phone" placeholder="Your phone"> 
             <input name="email" placeholder="Your e-mail" type="email"> 
@@ -631,10 +631,10 @@
         <div class="modal__close">&times;</div>
         <div class="modal__title">Your order:</div>
         <div class="modal__descr">Heart rate monitor Venue.</div>
-        <form class="feed-form feed-form_mt25" action="#">
-            <input name="name" required placeholder="Your name" type="text"> 
-            <input name="phone" required placeholder="Your phone"> 
-            <input name="email" required placeholder="Your e-mail" type="email"> 
+        <form id="order-form" class="feed-form feed-form_mt25" action="#">
+            <input name="name" placeholder="Your name" type="text"> 
+            <input name="phone" placeholder="Your phone"> 
+            <input name="email" placeholder="Your e-mail" type="email"> 
 
             <button class="button button_mini">buy</button>
         </form>
