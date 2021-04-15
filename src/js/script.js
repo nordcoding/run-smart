@@ -80,7 +80,7 @@ $(document).ready(function(){
     };
 
     validateForms('#consultation-form');
-    validateForms('#consultation');
+    validateForms('#popup-form');
     validateForms('#order-form');
 
     $('input[name=phone]').mask("+34 (999) 999-999");
@@ -88,8 +88,8 @@ $(document).ready(function(){
     $('form').submit(function(e) {
         e.preventDefault();
         if (!$(this).valid()) {
-            return;   
-            }
+        return;   
+        }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
